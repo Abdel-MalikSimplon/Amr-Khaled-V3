@@ -1,0 +1,27 @@
+C'est ici qu'on fait le découpage de l'architecture du site en sections principales.
+
+C'est généralement des sélecteurs simples, de descendants ou d'enfants, voire de classes ou d'identifiants (c'est la seule catégorie où l'ID est toléré).
+
+le mot !important n'est pas autorisé ici.
+
+
+.container {
+  ...
+  ...
+}
+
+header > img, header > nav {
+  ...
+  ...
+}
+
+footer {
+  ...
+  ...
+}
+
+
+Attention à ne pas confondre le layout et les modules !
+
+Le layout correspond aux sections majeures du site, ce sont les grandes parties du template (le header, le footer, la sidebar, ...).
+Les modules correspondent aux sections mineures qui peuvent apparaître sur le site (menu de navigation, formulaire de connexion, ...). Le layout peut contenir un ou plusieurs modules.

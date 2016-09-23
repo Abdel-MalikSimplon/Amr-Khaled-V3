@@ -1,0 +1,30 @@
+Un module est une section mineure, un composant autonome de la page (modulaire).
+Les modules les plus classiques sont la navigation et les boutons.
+
+Les ID et !important ne sont pas autorisé ici.
+
+.block-list {
+  ..
+  ..
+}
+
+.block-list > li {
+  ..
+  ..
+}
+
+.block-list > li:last-child {
+  ..
+}
+
+.block-list__link {
+  ..
+  ..
+}
+
+Le plus complexe dans l'élaboration des modules est certainement le fait de devoir prendre garde à ce qu'ils soient modulaires, justement.
+
+Un module doit �tre !un bloc autonome! et la structure des s�lecteurs doit refl�ter cela. Si vous commencez � ajouter un contexte sp�cifique dans votre CSS pour styliser votre module �en fonction de l� o� il se trouve�, vous passez � c�t� de la plaque !
+
+header .block-list { ... } /* Mauvaise id�e =( */
+.block-list-fit { ... } /* Bien mieux ! */

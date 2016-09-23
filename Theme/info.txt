@@ -1,0 +1,37 @@
+Il se peut qu'un projet nécessite l'élaboration de différents thèmes pouvant s'interchanger en fonction des choix de l'utilisateur ou de l'équipe.
+
+Dans ce cas, on peut découpler l'apparence de la structure des modules, afin de pouvoir switcher facilement entre ces différents designs.
+
+On va devoir très simplement redéfinir les styles de base, de layout, de module ou même de state en indiquant de manière claire quelles sont les règles qui définissent le thème et quelles sont celles qui n'en font pas partie.
+
+Bien souvent, séparer clairement ces règles en les regroupant dans un fichier CSS relatif au thème suffit à montrer cette distinction.
+
+/* Exemple des styles d'un theme d'un projet */
+
+body {
+  font-family: ...;
+}
+
+header {
+  background-color: ..;
+  color: ..;
+}
+
+.block-list > li {
+  border: ...;
+}
+
+/* Ou bien si le thème est interchangeable, on peut envisager ceci */
+
+.theme-ocean {
+  font-family: ..;
+}
+
+.theme-ocean header {
+  background-color: ..;
+  color: ..;
+}
+
+.theme-ocean .block-list > li {
+  borde: ..;
+}

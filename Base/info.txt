@@ -1,0 +1,24 @@
+Dans le dossier 'base' vont se retrouver les éléments par défault. Les règles de style 'de base'.
+
+En général ce sont des éléments HTML basiques (h1, p), mais on peut également y mettre des sélecteurs de descendance (p a) et des sélecteurs d'enfants (ul > li) ou encore des pseudo-classes (a:hover).
+
+
+body {
+  ..
+}
+
+h1 {
+  ..
+}
+
+h1, h2, h3 {
+  ..
+}
+
+h1 > span, h2 > span, h3 > span {
+  ..
+}
+
+
+
+On ne doit pas utiliser de classe ou d'identifiant et encore moins du !important dans cette catégorie.

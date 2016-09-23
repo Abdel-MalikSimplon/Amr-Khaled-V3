@@ -1,0 +1,37 @@
+/* Bouton de play */
+
+/* container du bouton */
+.btn-play
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    width: 111px;
+    height: 111px;
+
+    transform: translate(-50%, -50%);
+}
+
+/* Image du bouton */
+.btn-play > img
+{
+    cursor: pointer;
+}
+
+/* Bouton qui permet de voir plus de contenu d'une émission */
+
+.btn-voir-plus
+{
+    font-size: 1.8em;
+    line-height: 49px;
+
+    width: 162px;
+    height: 49px;
+    margin: 42px auto 0 auto;
+
+    text-align: center;
+
+    color: #fff;
+    background-color: #1e1e1e;
+}

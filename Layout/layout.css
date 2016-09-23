@@ -1,0 +1,528 @@
+/*
+  ==================================================
+  Styles du HEADER, Wrapper, Logo, Navigation principale et
+  des réseaux sociaux
+  ==================================================
+*/
+
+
+/* Header principal du site */
+
+header
+{
+    height: 258px;
+
+    background-color: #212121;
+}
+
+/* Bloc container pour la globalité du site */
+
+.wrapper
+{
+    position: relative; /* Positionner en relatif afin de servir d'ancetre pour les élements positionners en absolute */
+
+    padding: 1px 0; /* Utiliser pour le contexte block, sinon les margin des enfants se répercuterons sur le parent (ici wrapper) */
+
+    max-width: 960px; /* Prendra une largeure maximale de 960px, il fait donc 960px de large */
+    height: auto;
+    margin: 0 auto;
+    /*background-color: rgb(194, 29, 105);*/
+}
+
+/* Logo principal du site, centrer dans le header */
+
+.logo
+{
+    display: block; /* Mis en display: block afin de pouvoir utiliser le margin: auto; */
+
+    width: 153px;
+    height: 153px;
+    margin: 25px auto;
+}
+
+/*
+  Il sagit de la navigation principale du site, c'est surtout pour le côté
+  sémantique, car j'utilise le ul pour la nav
+*/
+
+
+header nav
+{
+    font-size: 1.8em;
+
+    height: auto;
+}
+
+/* La navigation à proprement parler, c'est la balise ul */
+
+.nav-principale
+{
+    padding: 0; /* suppresion des paddings par défaut */
+
+    list-style: none;
+
+    text-align: center;
+}
+
+/* Les éléments de la navigation */
+
+.nav-principale li
+{
+    display: inline-block; /* positionnement des éléments de la navigation en inline-block afin de pouvoir les aligner (inline) et ajouter des marges (block) */
+
+    margin-left: 25px;
+}
+
+/* Liens cliquables de la navigation */
+
+.nav-principale a
+{
+    text-decoration: none;
+
+    color: #bdbdbd;
+}
+
+/* Styles au survol des liens de la navigation principale */
+
+.nav-principale a:hover
+{
+    color: #00796b;
+    font-weight: bold;
+}
+
+/*
+  Bloc des réseaux sociaux (ici c'est un ul, j'ai ajouté une classe afin de le
+  différencier du ul de la nav principale)
+*/
+
+
+.reseaux-sociaux
+{
+    position: absolute;
+    top: 25px;
+    right: 0;
+    /*
+  J'ai utiliser un positionnement en absolute afin de faciliter le
+  positionnement, il se positionne par rapport à son premier ancetre qu'il
+  rencontre en position absolute ou relatif (ici le wrapper)
+  */
+}
+
+/* Les éléments de liste contenant les différents liens vers les réseaux sociaux */
+
+.reseaux-sociaux li
+{
+    display: inline-block;
+
+    margin-right: 25px;
+
+    vertical-align: middle;
+}
+
+/*
+  ==================================================
+  FIN
+  ==================================================
+*/
+
+
+/*
+  ==================================================
+  Styles du bloc de l'épisode mis en avant sur la
+  page d'accueil.
+  ==================================================
+*/
+
+
+/* Bloc principal contenant la vidéo mise en avant */
+
+.home-mis-en-avant
+{
+    height: auto;
+
+    background-color: #bdbdbd;
+}
+
+/* Bloc de la vidéo à proprement parler */
+
+.bloc-video-mea
+{
+    height: 515px;
+}
+
+/* A metre dans module.css */
+
+.btn-play
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    width: 111px;
+    height: 111px;
+
+    transform: translate(-50%, -50%);
+}
+
+.btn-play > img
+{
+    cursor: pointer;
+}
+
+/*
+  ==================================================
+  FIN
+  ==================================================
+*/
+
+
+/*
+  ==================================================
+  Bloc de navigation vers toutes les émissions présent
+  sur le site. (à mettre dans module ?)
+  ==================================================
+*/
+
+
+.all-emissions
+{
+    height: 60px;
+    background-color: #00796b;
+}
+
+.all-emissions ul
+{
+    margin: auto;
+    padding: 0;
+    /* background-color: blue; */
+}
+
+.all-emissions li
+{
+    display: inline-block;
+
+    margin-left: 30px;
+
+    vertical-align: middle;
+}
+
+.all-emissions a
+{
+    font-size: 1.6em;
+    line-height: 60px;
+
+    text-decoration: none;
+
+    color: #fff;
+}
+
+/* A ajouter dans module */
+
+.all-emissions a:hover
+{
+    color: #ffc107;
+    font-weight: bold;
+}
+
+/*
+  ==================================================
+  FIN
+  ==================================================
+*/
+
+
+/*
+  ==================================================
+  Section des derniers épisodes publiés sur le site
+  ==================================================
+*/
+
+
+.last-episode
+{
+    height: 716px;
+
+    background-color: #212121;
+}
+
+.last-episode__top
+{
+    height: 480px;
+}
+
+.last-episode__bot
+{
+    height: 236px;
+}
+
+.last-episode__left
+{
+    display: inline-block;
+
+    width: 480px;
+    height: 480px;
+}
+
+.last-episode__right
+{
+    display: inline-block;
+
+    width: 480px;
+    height: 480px;
+}
+
+.last-episode__bloc
+{
+    display: inline-block;
+
+    width: 240px;
+    height: 236px;
+}
+
+/*
+  ==================================================
+  FIN
+  ==================================================
+*/
+
+
+/*
+  ==================================================
+  Section "à propos" de Amr Khaled
+  ==================================================
+*/
+
+
+.a-propos
+{
+    height: 685px;
+
+    background: url(../img/a-propos.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.a-propos__bloc-text
+{
+    overflow: hidden;
+
+    height: 685px;
+
+    color: #fff;
+    background: url(../img/a-propos-bloc-text.png) no-repeat;
+}
+
+.a-propos__bloc-text h1
+{
+    font-size: 2.8em;
+
+    margin: 116px 0 47px 25px;
+
+    text-align: left;
+}
+
+.a-propos__bloc-text p
+{
+    font-size: 1.6em;
+
+    width: 430px;
+    margin: 0 25px;
+
+    text-align: justify;
+}
+
+/*
+  ==================================================
+  FIN
+  ==================================================
+*/
+
+
+/*
+  ==================================================
+  Bloc de Citation
+  ==================================================
+*/
+
+
+.citation
+{
+    overflow: hidden;
+
+    height: 255px;
+
+    background: url(../img/citation.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.citation  p
+{
+    font-size: 2.4em;
+
+    width: 600px;
+    margin: 100px auto;
+    padding: 20px;
+
+    text-align: center;
+
+    color: #fff;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+/*
+  ==================================================
+  FIN
+  ==================================================
+*/
+
+
+/*
+  ==================================================
+  Bloc de Un Sourire Espoir page d'Accueil
+  ==================================================
+*/
+
+
+.bloc-un-sourire-espoir
+{
+    overflow: hidden;
+
+    height: 1282px;
+
+    background-color: #fff;
+}
+
+.bloc-contain-episodes
+{
+    width: 960px;
+    height: 480px;
+    margin-top: 49px;
+    margin-bottom: 0;
+
+    background-color: rgb(221, 72, 40);
+}
+
+.btn-voir-plus
+{
+    font-size: 1.8em;
+    line-height: 49px;
+
+    width: 162px;
+    height: 49px;
+    margin: 42px auto 0 auto;
+
+    text-align: center;
+
+    color: #fff;
+    background-color: #1e1e1e;
+}
+
+.bloc-episode
+{
+    display: inline-block;
+
+    width: 240px;
+    height: 240px;
+
+    background-color: #1e1e1e;
+}
+
+.bloc-un-sourire-espoir  a
+{
+    text-decoration: none;
+}
+
+/*
+  ==================================================
+  FIN
+  ==================================================
+*/
+
+
+/*
+  ==================================================
+  Bloc de toutes les émissions présente sur le site
+  ==================================================
+*/
+
+
+.all-emission-home
+{
+    height: auto;
+
+    background-color: #009688;
+}
+
+.emissions
+{
+    overflow: hidden;
+
+    height: 680px;
+    margin: 86px 0;
+}
+
+/*
+  ==================================================
+  FIN
+  ==================================================
+*/
+
+
+/*
+  ==================================================
+  Styles du FOOTER
+  ==================================================
+*/
+
+footer {
+    height: auto;
+    background-color: #1e1e1e
+}
+
+footer .realisation-site {
+    font-size: 1.6em;
+    text-align: center;
+}
+
+footer .realisation-site > a {
+    color: #00796b;
+    text-decoration: none;
+}
+
+.twitter-tweets {
+    width: 300px;
+    height: 500px;
+    background-color: rgb(4, 99, 120);
+    display: inline-block;
+    margin-left: 12px;
+}
+
+/*
+  ==================================================
+  SECTION POUR AVANCER RAPIDEMENT SUR LE PROJET
+  ==================================================
+*/
+
+/* Bouton plus avec l'id #btn-plus qui sert à afficher plus d'émission sur la page d'accueil */
+
+.btn-plus {
+    vertical-align: middle;
+    position: relative;
+}
+
+/* Bloc avec les autres émissions */
+
+.bae {
+    width: 270px;
+    height: 180px;
+    margin-left: -30px;
+    position: absolute;
+    z-index: 999;
+    display: none;
+    border-radius: 3px;
+    background-color: rgb(33, 30, 30);
+}
+
+/* Classe qui permait de supprimer le display: none; de .bae et donc d'afficher le bloc avec les autres émissions */
+.displayBlock {
+    display: block;
+}

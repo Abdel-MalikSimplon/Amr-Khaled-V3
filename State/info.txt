@@ -1,0 +1,17 @@
+Dans cette section on va créer des classes qui vont définir un état particulier à nos éléments.
+
+En général ce sont de simples classes CSS.
+
+C'est la seule catégorie où !important est toléré, voire recommandé.
+
+
+.is-block {
+  display: block !important;
+}
+
+.is-dragged {
+  color: rgb(0, 85, 128) !important;
+  background-color: rgb(217, 237, 247) !important;
+}
+
+Bien souvent, les états correspondent à des interactions avec l’utilisateur et ont des dépendances avec Javascript.
