@@ -6,7 +6,7 @@ francais.addEventListener('click', function(e) {
 
     const xhr = new XMLHttpRequest();
 
-    xhr.open('GET', 'textesVideos/textes-fr.json', true);
+    xhr.open('GET', '../textesVideos/textes.json', true);
     xhr.onreadystatechange = function() {
         if (xhr.readyState === 4 && xhr.status === 200) {
             let videoTexte = JSON.parse(xhr.responseText);
