@@ -20,7 +20,7 @@ header {
   max-width : 960px;
   height    : auto;
   margin    : 0 auto;
-  padding   : 1px 0;
+  padding: 1px 0;
   /*
   Positionner en relatif afin de servir d'ancetre pour les élements positionners
   en absolute
@@ -359,6 +359,7 @@ header nav {
   text-align       : center;
   font-size        : 1.8em;
   line-height      : 49px;
+  cursor: not-allowed;
 }
 
 .bloc-episode {
@@ -395,6 +396,10 @@ header nav {
   height   : 680px;
   margin   : 86px 0;
   overflow : hidden;
+}
+
+.emissions a {
+    cursor: not-allowed;
 }
 
 /*
